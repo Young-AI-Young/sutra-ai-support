@@ -1,47 +1,127 @@
-<!-- support.html -->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <title>觉者AI 技术支持</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif; background: #faf8f5; color: #222; margin: 0; padding: 0; }
-    .container { max-width: 640px; margin: 60px auto; background: #fff; border-radius: 14px; box-shadow: 0 2px 12px #e5e0d8; padding: 36px 28px; }
-    h1 { color: #b48c5e; font-size: 2.1em; margin-bottom: 18px; }
-    h2 { color: #b48c5e; font-size: 1.15em; margin-top: 28px; }
-    p, li { font-size: 1.05em; line-height: 1.9; }
-    ul { padding-left: 1.2em; }
-    a { color: #b48c5e; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .contact { margin-top: 32px; font-size: 1em; }
-    .footer { margin-top: 40px; color: #aaa; font-size: 0.95em; text-align: center; }
-    .wechat-qrcode { margin-top: 16px; text-align: center; }
-    .wechat-qrcode img { width: 120px; border-radius: 8px; box-shadow: 0 1px 6px #eee; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; 
+      background-color: #fbfaf8; 
+      color: #333; 
+      margin: 0; 
+      padding: 20px;
+      line-height: 1.8;
+    }
+    .container { 
+      max-width: 720px; 
+      margin: 40px auto; 
+      background-color: #fff; 
+      border-radius: 16px; 
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
+      padding: 30px 40px; 
+    }
+    h1 { 
+      color: #b48c5e; 
+      font-size: 2em; 
+      margin-bottom: 1em;
+      text-align: center;
+      border-bottom: 2px solid #f0e9e1;
+      padding-bottom: 0.5em;
+    }
+    h2 { 
+      color: #b48c5e; 
+      font-size: 1.3em; 
+      margin-top: 2em; 
+      margin-bottom: 0.8em;
+      padding-bottom: 0.3em;
+      border-bottom: 1px solid #f0e9e1;
+    }
+    p, li { 
+      font-size: 1em; 
+      color: #444;
+    }
+    ul { 
+      padding-left: 1.5em; 
+      list-style-type: '❖ ';
+    }
+    li {
+      margin-bottom: 0.8em;
+      padding-left: 0.5em;
+    }
+    a { 
+      color: #b48c5e; 
+      text-decoration: none; 
+      font-weight: 500;
+    }
+    a:hover { 
+      text-decoration: underline; 
+    }
+    .contact-section { 
+      margin-top: 2.5em; 
+      padding: 1.5em;
+      background-color: #fdfcfb;
+      border: 1px solid #f0e9e1;
+      border-radius: 8px;
+    }
+    .footer { 
+      margin-top: 3em; 
+      color: #999; 
+      font-size: 0.9em; 
+      text-align: center; 
+    }
+    .wechat-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 1em;
+    }
+    .wechat-qrcode img { 
+      width: 100px; 
+      height: 100px;
+      border-radius: 8px; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>觉者AI 技术支持</h1>
-    <p>感谢您使用觉者AI。如在使用过程中遇到任何问题、建议或反馈，欢迎通过以下方式联系我们：</p>
+    <p>感谢您使用觉者AI。我们致力于为您提供流畅、稳定的使用体验。若您在使用过程中遇到任何问题，或有宝贵的建议与反馈，欢迎随时通过以下方式与我们取得联系。</p>
+    
+    <h2>联系方式</h2>
     <ul>
-      <li>邮箱：<a href="mailto:lyman.young@outlook.com">lyman.young@outlook.com</a></li>
-      <li>微信号：lymanyoung</li>
+      <li><strong>首选联系方式 (推荐)：</strong><br>
+        发送邮件至 <a href="mailto:lyman.young@outlook.com">lyman.young@outlook.com</a>。我们承诺在3个工作日内回复您的邮件。</li>
+      <li><strong>备用联系方式：</strong><br>
+        添加微信号：lymanyoung</li>
     </ul>
-    <h2>常见问题</h2>
+
+    <h2>常见问题 (FAQ)</h2>
     <ul>
-      <li>如遇App闪退、无法联网等技术问题，请尝试重启App或检查网络环境。</li>
-      <li>如需找回数据、同步问题、功能建议等，也欢迎邮件或公众号留言。</li>
-      <li>我们承诺在3个工作日内回复您的技术支持请求。</li>
+      <li><strong>应用闪退或无响应：</strong><br>
+        请尝试完全关闭应用后重新启动。如果问题依旧，请检查您的设备系统是否为最新版本，并考虑重启设备。</li>
+      <li><strong>AI无法连接或响应缓慢：</strong><br>
+        这通常与网络环境有关。请确保您的设备已连接到稳定的Wi-Fi或移动网络。</li>
+      <li><strong>数据同步问题：</strong><br>
+        如果您开启了云同步功能但数据未能同步，请检查您的网络连接，并尝试在应用设置中手动触发同步。</li>
+      <li><strong>功能建议与反馈：</strong><br>
+        我们非常欢迎您对产品的任何想法！请将您的建议通过邮件发送给我们，您的每一个想法都可能帮助我们把产品做得更好。</li>
     </ul>
-    <div class="contact">
-      <b>技术支持团队</b><br>
+
+    <div class="contact-section">
+      <strong>技术支持团队</strong><br>
       觉者AI<br>
-      <a href="mailto:lyman.young@outlook.com">lyman.young@outlook.com</a>
+      我们致力于为您提供及时有效的帮助。
     </div>
+
     <div class="footer">
-      © 2025 觉者AI | 技术支持页面
+      <p>© <span id="year">2025</span> 觉者AI | 技术支持页面</p>
     </div>
   </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
